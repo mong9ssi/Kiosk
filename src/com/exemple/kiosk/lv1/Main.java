@@ -36,7 +36,6 @@ public class Main {
         //메뉴 선택 기능 추가
         while (true) {
             scnInt1 = scanner.nextInt();
-            String choiceMenu;
             if (scnInt1 == 1) {
                 menuList.add(castellaMenu1);
                 castellaMenu1.selectedMenu();
