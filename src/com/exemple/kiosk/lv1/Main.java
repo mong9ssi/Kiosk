@@ -1,4 +1,4 @@
-package com.exemple.kiosk;
+package com.exemple.kiosk.lv1;
 
 public class Main {
     public static void main(String[] args) {
