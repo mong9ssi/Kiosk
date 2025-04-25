@@ -1,4 +1,4 @@
-package com.exemple.kiosk.lv1;
+package com.exemple.kiosk.lv2;
 
 public class CastellaMenu {
     // 속성
@@ -7,7 +7,7 @@ public class CastellaMenu {
     private String comment;
 
     // 생성자
-    CastellaMenu (String name , int price , String commment) {
+    CastellaMenu(String name , int price , String commment) {
         this.name = name;
         this.price = price;
         this.comment = commment;
