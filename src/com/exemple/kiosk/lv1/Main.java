@@ -31,17 +31,31 @@ public class Main {
         System.out.println("4. 우유 생크림 카스텔라 | ₩11000 | 우유크림이 듬뿍 들어가 촉촉하고 달달한 맛");
         System.out.println("5. 초코칩 생크림 카스텔라 | ₩13000 | 진한 초코칩과 우유 생크림 서로의 맛이 어울러져 촉촉하고 달달한 맛");
         System.out.println("|장바구니에 추가할 메뉴를 입력하세요|");
-        System.out.println("0. 종료 ");
+        System.out.println("9. 주문목록조회 | 0. 종료 ");
 
         //메뉴 선택 기능 추가
         while (true) {
             scnInt1 = scanner.nextInt();
             String choiceMenu;
             if (scnInt1 == 1) {
+                menuList.add(castellaMenu1);
+                castellaMenu1.selectedMenu();
             } else if (scnInt1 == 2) {
+                menuList.add(castellaMenu2);
+                castellaMenu2.selectedMenu();
             } else if (scnInt1 == 3) {
+                menuList.add(castellaMenu3);
+                castellaMenu3.selectedMenu();
             } else if (scnInt1 == 4) {
+                menuList.add(castellaMenu4);
+                castellaMenu4.selectedMenu();
             } else if (scnInt1 == 5) {
+                menuList.add(castellaMenu5);
+                castellaMenu5.selectedMenu();
+            } else if (scnInt1 == 9) {
+                for (CastellaMenu c : menuList) {
+                    System.out.println(c);
+                }
             } else if (scnInt1 == 0) {
                 System.out.println("종료합니다.");
                 break;

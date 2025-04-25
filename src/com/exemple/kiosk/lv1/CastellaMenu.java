@@ -14,6 +14,12 @@ public class CastellaMenu {
     }
 
     // 기능
+    @Override
+    public String toString() {
+        return name + " | ₩" + price + " | " + comment;
+    }
 
-
+    public void selectedMenu() {
+        System.out.println(name + "을(를) 주문목록에 추가합니다.");
+    }
 }
