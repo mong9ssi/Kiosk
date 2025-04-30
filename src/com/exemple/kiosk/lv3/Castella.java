@@ -7,7 +7,7 @@ public class Castella {
     private String comment;
 
     // 생성자
-    Castella (String name , int price , String comment) {
+    public Castella (String name , int price , String comment) {
         this.name = name;
         this.price = price;
         this.comment = comment;

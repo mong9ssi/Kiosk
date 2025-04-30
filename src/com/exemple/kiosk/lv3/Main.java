@@ -12,8 +12,10 @@ public class Main {
         Castella castella4 = kiosk.makeCastellaMenu("우유 생크림 카스텔라" , 11000 , "우유크림이 듬뿍 들어가 촉촉하고 달달한 맛");
         Castella castella5 = kiosk.makeCastellaMenu("초코칩 생크림 카스텔라" , 13000 , "진한 초코칩과 우유 생크림 서로의 맛이 어울러져 촉촉하고 달달한 맛");
 
-
+        // 메뉴 프린트
         kiosk.setMenuList();
+        // 키오스크 입력 스타트
+        kiosk.start();
 
 
 
