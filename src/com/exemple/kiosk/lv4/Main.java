@@ -20,14 +20,14 @@ public class Main {
         MenuItem Cream4 = menu2.addMenuItem("오레오 생크림" , 2500 , "오레오가 듬뿍 들어가 쿠키칩이 씹히는 생크림");
 
         Menu menu3 = kiosk.addMenuList("드링크");
-        MenuItem drink1 = menu3.addMenuItem("아메리카노" , 3000 , "Ice");
-        MenuItem drink2 = menu3.addMenuItem("아메리카노" , 3000 , "Hot");
-        MenuItem drink3 = menu3.addMenuItem("카페라떼" , 3500 , "Ice");
-        MenuItem drink4 = menu3.addMenuItem("카페라떼" , 3500 , "Hot");
+        MenuItem drink1 = menu3.addMenuItem("Americano" , 3000 , "Ice");
+        MenuItem drink2 = menu3.addMenuItem("Americano" , 3000 , "Hot");
+        MenuItem drink3 = menu3.addMenuItem("caffeLatte" , 3500 , "Ice");
+        MenuItem drink4 = menu3.addMenuItem("caffeLatte" , 3500 , "Hot");
 
-        kiosk.printMainMenuList();
 
-        menu1.printMenuList();
+        kiosk.start(menu1,menu2,menu3);
+
 
 
 

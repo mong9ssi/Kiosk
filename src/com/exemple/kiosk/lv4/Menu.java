@@ -1,13 +1,12 @@
 package com.exemple.kiosk.lv4;
 
-import com.exemple.kiosk.lv3.Castella;
-
 import java.util.ArrayList;
 
 public class Menu {
     // 속성
     private String category;
     private ArrayList<MenuItem> menuItemList;
+    private ArrayList<MenuItem> cartList = new ArrayList<>();
 
     // 생성자
     public Menu(String category) {
@@ -23,7 +22,7 @@ public class Menu {
         return menuItem;
     }
 
-    // 메뉴 전체 출력 메서드
+    // 전체 메뉴 출력 메서드
     public void printMenuList() {
         System.out.println("====" + this.category + "메뉴 ====");
         for (int i = 0; i < menuItemList.size(); i++) {
@@ -32,8 +31,28 @@ public class Menu {
         System.out.println("============");
     }
 
+
+
+    // 메뉴 단품 (카스텔라, 생크림) 출력 메서드
+    public void printMenu (int i) {
+        System.out.println(menuItemList.get(i-1).getName() + " || " + menuItemList.get(i-1).getPrice() +"원을 선택하셨습니다" );
+    }
+
+    // 메뉴 단품 (드링크) 출력 메서드
+    public void printDrinkMenu (int i) {
+        System.out.println(menuItemList.get(i-1).getComment() + " " + menuItemList.get(i-1).getName() + " || " + menuItemList.get(i-1).getPrice() +"원을 선택하셨습니다" );
+    }
+
+
+
+
+
     // 게터
     public String getCategory() {
         return category;
+    }
+
+    public ArrayList<MenuItem> getMenuItemList() {
+        return menuItemList;
     }
 }
