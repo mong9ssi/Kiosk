@@ -1,7 +1,5 @@
 package com.exemple.kiosk.lv4;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         Kiosk kiosk = new Kiosk("메인메뉴");
@@ -25,12 +23,7 @@ public class Main {
         MenuItem drink3 = menu3.addMenuItem("caffeLatte" , 3500 , "Ice");
         MenuItem drink4 = menu3.addMenuItem("caffeLatte" , 3500 , "Hot");
 
-
         kiosk.start(menu1,menu2,menu3);
-
-
-
-
 
     }
 }

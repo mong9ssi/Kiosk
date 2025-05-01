@@ -6,7 +6,6 @@ public class Menu {
     // 속성
     private String category;
     private ArrayList<MenuItem> menuItemList;
-    private ArrayList<MenuItem> cartList = new ArrayList<>();
 
     // 생성자
     public Menu(String category) {
@@ -28,6 +27,7 @@ public class Menu {
         for (int i = 0; i < menuItemList.size(); i++) {
             System.out.println((i+1) + ". " + menuItemList.get(i).getName() + " || " + menuItemList.get(i).getPrice() + " || " + menuItemList.get(i).getComment());
         }
+        System.out.println("0. 종료");
         System.out.println("============");
     }
 
